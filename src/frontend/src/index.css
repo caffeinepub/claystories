@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Figtree:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+
+    /* Peacock blue-green palette ✨ */
+    --background: 0.96 0.018 195;
+    --foreground: 0.15 0.04 220;
+    --card: 0.98 0.01 200;
+    --card-foreground: 0.15 0.04 220;
+    --popover: 0.98 0.01 200;
+    --popover-foreground: 0.15 0.04 220;
+
+    --primary: 0.42 0.12 210;
+    --primary-foreground: 0.97 0.01 195;
+
+    --secondary: 0.88 0.04 190;
+    --secondary-foreground: 0.15 0.04 220;
+
+    --muted: 0.91 0.025 195;
+    --muted-foreground: 0.48 0.06 210;
+
+    --accent: 0.78 0.12 80;
+    --accent-foreground: 0.12 0.04 70;
+
+    --destructive: 0.577 0.245 27;
+    --destructive-foreground: 0.985 0 0;
+
+    --border: 0.87 0.03 195;
+    --input: 0.87 0.03 195;
+    --ring: 0.42 0.12 210;
+
+    --announcement: 0.25 0.08 220;
+    --footer: 0.22 0.07 210;
+    --section-band: 0.92 0.025 195;
+
+    --chart-1: 0.42 0.12 210;
+    --chart-2: 0.58 0.14 185;
+    --chart-3: 0.72 0.1 165;
+    --chart-4: 0.78 0.12 80;
+    --chart-5: 0.35 0.09 230;
+    --sidebar: 0.96 0.018 195;
+    --sidebar-foreground: 0.15 0.04 220;
+    --sidebar-primary: 0.42 0.12 210;
+    --sidebar-primary-foreground: 0.97 0.01 195;
+    --sidebar-accent: 0.88 0.04 190;
+    --sidebar-accent-foreground: 0.15 0.04 220;
+    --sidebar-border: 0.87 0.03 195;
+    --sidebar-ring: 0.42 0.12 210;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Figtree", sans-serif;
+  }
+}
